@@ -1,0 +1,228 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Hero — white with light purple band optional via border only */
+.hero {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero__title {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.hero__lead {
+  max-width: 720px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+/* Page headers — light purple section, no gradient */
+.page-header {
+  padding: 3rem 0 2rem;
+  text-align: center;
+  background: var(--color-purple-light);
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+.page-header__title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: var(--color-purple-dark);
+}
+
+.page-header__lead {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
+
+.page-header__tagline {
+  margin: 0.75rem 0 0;
+  font-size: 1rem;
+  color: var(--color-purple);
+  font-weight: 600;
+}
+
+.hero__title--brand {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 0.06em;
+  color: var(--color-purple-dark);
+}
+
+.hero__tagline {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: var(--color-purple);
+  font-weight: 600;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.section__text--emphasis {
+  font-style: italic;
+  color: var(--color-text);
+}
+
+.card__link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--color-purple);
+  text-decoration: none;
+}
+
+.card__link:hover {
+  color: var(--color-purple-hover);
+  text-decoration: none;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contact-card--wide {
+  grid-column: 1 / -1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.btn--primary {
+  background: var(--color-purple);
+  color: #ffffff;
+  border: 1px solid var(--color-purple);
+}
+
+.btn--primary:hover {
+  background: var(--color-purple-hover);
+  border-color: var(--color-purple-hover);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn--outline {
+  background: var(--color-bg);
+  border: 1px solid var(--color-purple);
+  color: var(--color-purple);
+}
+
+.btn--outline:hover {
+  background: var(--color-purple-light);
+  border-color: var(--color-purple-hover);
+  color: var(--color-purple-hover);
+  text-decoration: none;
+}
+
+.section {
+  padding: 3rem 0;
+  background: var(--color-bg);
+}
+
+.section--alt {
+  background: var(--color-purple-light);
+}
+
+.section__title {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  color: var(--color-purple-dark);
+}
+
+.section__text {
+  margin: 0 0 1rem;
+  max-width: 720px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+.content .section__title {
+  margin-top: 2rem;
+}
+
+.content .section__title:first-child {
+  margin-top: 0;
+}
+
+.cards {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.card__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  color: var(--color-purple-dark);
+}
+
+.card__text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.card__text a {
+  color: var(--color-purple);
+}
+
+.list {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+.list li {
+  margin-bottom: 0.35rem;
+}

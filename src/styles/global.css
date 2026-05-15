@@ -1,0 +1,28 @@
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-purple);
+}
+
+a:hover {
+  color: var(--color-purple-hover);
+}
+
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+}
+
+.site main {
+  flex: 1;
+  background: var(--color-bg);
+}

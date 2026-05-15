@@ -1,0 +1,77 @@
+.program-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1px solid var(--color-border);
+}
+
+.program-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+.program-card__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  color: #ffffff;
+}
+
+.program-card__visual svg {
+  width: 80px;
+  height: 80px;
+}
+
+.program-card__visual--coral {
+  background: linear-gradient(135deg, #f97316, #fb923c);
+}
+
+.program-card__visual--sky {
+  background: linear-gradient(135deg, #38bdf8, #7dd3fc);
+}
+
+.program-card__visual--blue {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+}
+
+.program-card__visual--navy {
+  background: linear-gradient(135deg, #1e3a5f, #334155);
+}
+
+.program-card__visual--green {
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+}
+
+.program-card__visual--teal {
+  background: linear-gradient(135deg, #14b8a6, #2dd4bf);
+}
+
+.program-card__visual--indigo {
+  background: linear-gradient(135deg, #6366f1, #818cf8);
+}
+
+.program-card__visual--pink {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+}
+
+.program-card__visual--slate {
+  background: linear-gradient(135deg, #475569, #64748b);
+}
+
+.program-card__title {
+  margin: 1.25rem 1rem 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.program-card__text {
+  margin: 0 1rem 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}

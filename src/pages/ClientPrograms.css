@@ -1,0 +1,29 @@
+.client-programs {
+  background: var(--color-bg);
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.client-programs__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 540px) {
+  .client-programs__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .client-programs__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .client-programs__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
